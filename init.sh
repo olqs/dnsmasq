@@ -7,4 +7,4 @@ else
   cp /etc/resolv.conf /etc/resolv.conf.local
 fi
 
-/usr/sbin/dnsmasq -k -r /etc/resolv.conf.local --log-queries
+/usr/sbin/dnsmasq -k -r /etc/resolv.conf.local --log-queries --log-facility=-
